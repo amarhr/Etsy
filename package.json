@@ -1,0 +1,27 @@
+{
+  "name": "udemy-protractor",
+  "version": "1.0.0",
+  "description": "End-to-End Testing with Protractor",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/protractor config.js",
+    "start": "./node_modules/protractor/bin/protractor config.js"
+  },
+  "author": "Alexander Grischuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/centner/udemy-protractor/issues"
+  },
+  "homepage": "https://gitlab.com/centner/udemy-protractor#readme",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "protractor": "^3.2.2"
+  },
+  "devDependencies": {
+    "faker": "^3.1.0"
+  },
+  "scripts": {
+    "pree2e": "webdriver-manager update --standalone false --gecko false",
+    "e2e": "protractor"
+  }
+}
